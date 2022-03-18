@@ -1,3 +1,7 @@
+.-------------------------------------------.
+|               George's Room               |
+'-------------------------------------------'
+
 "Why, hello there!"
 George is standing triumphantly at the top of a grand tower made of
 Norwegian Wood. He steps down gracefully. "Take a seat anywhere," he says.

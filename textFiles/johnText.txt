@@ -1,3 +1,7 @@
+.-------------------------------------------.
+|               John's Room               |
+'-------------------------------------------'
+
 You open the door and a cat jumps out to greet you.
 The cat is too cute and small to be John, so you call out his name.
 He hops in the doorway, "At your service!" he says.

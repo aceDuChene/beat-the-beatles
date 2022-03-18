@@ -1,3 +1,7 @@
+.-------------------------------------------.
+|               Ringo's Room               |
+'-------------------------------------------'
+
 "Hello again!" says Ringo cheerfully, flashing you a peace sign.
 "Well, I've told you we'd make it hard on you, didn't I? Beat me
 at tic-tac-toe and I'll hand over my drums and sticks."
