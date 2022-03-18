@@ -28,15 +28,11 @@ void Paul::interaction(Player *inPlayer){
         answer = validateChar(false);
         if(answer == 'Y'){
             if(this->miniGame(inPlayer)){
-                cout << "\"Well, it looks like you really know your stuff." << endl;
-                cout << "Go ahead and take this as proof of your genius.\"" << endl;
-                cout << "Paul reaches into his coat and pulls a random item out of nowhere." << endl;
-                cout << "Check your inventory to see." << endl << endl;
+                readFile("./textFiles/paulGame/winItem.txt");
                 inPlayer->getPlayerItems()->addItem(getRandItem(0));
             }
             else{
-                cout << "\"Don't let it get you down, mate. You can always try again to make it better.\"" << endl;
-                cout << "Try again." << endl << endl;
+                readFile("./textFiles/paulGame/failureItem.txt");
             }
         }
         else{
@@ -45,17 +41,15 @@ void Paul::interaction(Player *inPlayer){
     }
     else{
         readFile("./textFiles/paulText.txt");
+        // won the game the first time
         if(this->miniGame(inPlayer)){
-            cout << "\"You might know more about us than even we do, and we know right about nothing." << endl;
-            cout << "Take good care of my Hofner bass and be sure to put it in the right place.\"" << endl;
-            cout << "Paul passes you the bass guitar. Check your inventory to see." << endl << endl;
+            readFile("./textFiles/paulGame/win.txt");
             inPlayer->getPlayerItems()->addItem(getRandItem(1));
             this->setInteractBool(true);
         }
+        // lost game, did not get guitar
         else{
-            cout << "\"Well, you didn't get it this time. But I want to help you with your problem." << endl;
-            cout << "Why don't you come back again and we'll act like none of this ever happened?\"" << endl;
-            cout << "Try again." << endl << endl;
+            readFile("./textFiles/paulGame/failure.txt");
         }
     }
 }
@@ -80,10 +74,7 @@ bool Paul::miniGame(Player *inPlayer){
     cout << questions[randQ] << endl;
     userAnswer = validateABCD();
     if(userAnswer != correctAnswers[randQ]){
-        cout << "Sorry, wrong answer..." << endl;
-        cout << "\"I'm a nice guy, y'know. I'll give you one more shot at this one." << endl;
-        cout << "If you're wrong this time, though, I'll have to kick you out of here." << endl;
-        cout << "You could always just come right back. I know I'm hard to resist.\"" << endl;
+        readFile("./textFiles/paulGame/wrongAnswer.txt");
         cout << questions[randQ] << endl;
         userAnswer = validateABCD();
     }
