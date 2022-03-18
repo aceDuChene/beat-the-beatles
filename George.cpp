@@ -45,7 +45,7 @@ void George::interaction(Player *inPlayer){
     //if they have not yet gotten the guitar, George will act like he's never seen them
     //before as he tries to erase the grotty sammy from his memory
     else{
-        readFile("geoText.txt");
+        readFile("./textFiles/geoText.txt");
         if(this->miniGame(inPlayer)){
             cout << "George gives you his guitar. Check your inventory to see it." << endl << endl;
             inPlayer->getPlayerItems()->addItem(getRandItem(1));

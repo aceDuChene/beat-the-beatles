@@ -43,7 +43,7 @@ void Ringo::interaction(Player *inPlayer){
         }
     }
     else{
-        readFile("ringText.txt");
+        readFile("./textFiles/ringText.txt");
         if(this->miniGame(inPlayer)){
             cout << "\"That was great fun! It's wonderful to have a friend to play with," << endl;
             cout << "otherwise it can get a little lonely. You won't need help carrying all these drums, right?" << endl;

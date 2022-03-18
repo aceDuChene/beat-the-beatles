@@ -25,14 +25,14 @@ void Begin::interaction(Player *inPlayer){
     inPlayer->setCurrentSpace(this);
     bool playBool = true;
     if(!this->getInteractBool()){
-        readFile("title.txt");
+        readFile("./textFiles/title.txt");
         cout << "You might have to adjust your window size." << endl;
         cout << "Would you like to play \"Beat The Beatles\"? Y/N: ";
         char answer = validateChar(true);
 
         if(answer == 'Y'){
             clrscr();
-            readFile("begin.txt");
+            readFile("./textFiles/begin.txt");
             cout << "Whose room will you start in?" << endl;
             printMenu();
             chooseMenu(inPlayer);

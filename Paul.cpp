@@ -44,7 +44,7 @@ void Paul::interaction(Player *inPlayer){
         }
     }
     else{
-        readFile("paulText.txt");
+        readFile("./textFiles/paulText.txt");
         if(this->miniGame(inPlayer)){
             cout << "\"You might know more about us than even we do, and we know right about nothing." << endl;
             cout << "Take good care of my Hofner bass and be sure to put it in the right place.\"" << endl;

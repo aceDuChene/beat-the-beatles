@@ -42,7 +42,7 @@ void John::interaction(Player *inPlayer){
         }
     }
     else{
-        readFile("johnTest.txt");
+        readFile("./textFiles/johnText.txt");
         if(this->miniGame(inPlayer)){
             cout << "\"Well, you beat me! You're getting better all the time, aren't you?\"" << endl;
             cout << "He hands you his guitar. Check your inventory to see." << endl << endl;
