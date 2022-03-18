@@ -117,14 +117,6 @@ char validateABCD(){
 }
 
 /************************************************************************
-* clrscr: Clears the screen. This is completely ripped from stackOverflow.
-*************************************************************************/
-void clrscr(){
-    //from catzilla https://stackoverflow.com/questions/17335816/clear-screen-using-c
-    cout << "\033[2J\033[1;1H";
-}
-
-/************************************************************************
 * readFile: Takes in a file name and prints it to the screen.
 *************************************************************************/
 void readFile(string inName){

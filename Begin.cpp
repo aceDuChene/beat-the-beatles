@@ -31,7 +31,6 @@ void Begin::interaction(Player *inPlayer){
         char answer = validateChar(true);
 
         if(answer == 'Y'){
-            clrscr();
             readFile("./textFiles/begin.txt");
             cout << "Whose room will you start in?" << endl;
             printMenu();
@@ -93,36 +92,30 @@ void Begin::printMenu(){
 bool Begin::chooseMenu(Player *inPlayer){
     switch(validateInteger(1,7)){
         case 1:
-            clrscr();
             this->getTop()->interaction(inPlayer);
             this->setInteractBool(true);
             inPlayer->addStep();
             return true;
         case 2:
-            clrscr();
             this->getRight()->interaction(inPlayer);
             this->setInteractBool(true);
             inPlayer->addStep();
             return true;
         case 3:
-            clrscr();
             this->getBottom()->interaction(inPlayer);
             this->setInteractBool(true);
             inPlayer->addStep();
             return true;
         case 4:
-            clrscr();
             this->getLeft()->interaction(inPlayer);
             this->setInteractBool(true);
             inPlayer->addStep();
             return true;
         case 5:
-            clrscr();
             inPlayer->getPlayerItems()->forwardPrint(false);
             this->setInteractBool(true);
             return true;
         case 6:
-            clrscr();
             //top of begin = ringo, top of ringo = end
             this->getTop()->getTop()->interaction(inPlayer);
             this->setInteractBool(true);
