@@ -61,9 +61,7 @@ void Begin::interaction(Player *inPlayer){
                     playBool = false;
                 }
                 else{
-                    cout << "Sorry, but you've run out of steps. The Beatles leave you behind since they can't be late to their gig." << endl;
-                    cout << "Guess you'll have to continue your trip alone..." << endl;
-                    cout << "Try again..." << endl;
+                    readFile("./textFiles/fail.txt");
                     playBool = false;
                 }
             }
@@ -75,13 +73,7 @@ void Begin::interaction(Player *inPlayer){
  * printMenu: Prints the menu for the user to choose from.
  * **************************************************************/
 void Begin::printMenu(){
-    cout << "1. Ringo" << endl;
-    cout << "2. Paul" << endl;
-    cout << "3. George" << endl;
-    cout << "4. John" << endl;
-    cout << "5. Check Items" << endl;
-    cout << "6. Load up the Magical Mystery Tour Bus" << endl;
-    cout << "7. Quit" << endl;
+        readFile("./textFiles/menu.txt");
 }
 
 /****************************************************************
