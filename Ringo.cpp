@@ -29,13 +29,11 @@ void Ringo::interaction(Player *inPlayer){
         answer = validateChar(false);
         if(answer == 'Y'){
             if(this->miniGame(inPlayer)){
-                cout << "\"You really are the Champ. I was right in trusting you with this job.\"" << endl;
-                cout << "He gently places an item in your hand. \"And always remember, peace and love.\"" << endl;
-                cout << "Check your inventory to see." << endl << endl;
+                readFile("./textFiles/ringoGame/winItem.txt");
                 inPlayer->getPlayerItems()->addItem(getRandItem(0));
             }
             else{
-                cout << "\"Good try, mate. All's fair in peace and love.\"" << endl << endl;
+                readFile("./textFiles/ringoGame/failureItem.txt");
             }
         }
         else{
@@ -45,18 +43,12 @@ void Ringo::interaction(Player *inPlayer){
     else{
         readFile("./textFiles/ringText.txt");
         if(this->miniGame(inPlayer)){
-            cout << "\"That was great fun! It's wonderful to have a friend to play with," << endl;
-            cout << "otherwise it can get a little lonely. You won't need help carrying all these drums, right?" << endl;
-            cout << "Peace and love, peace and love.\" He piles you down with a drum set." << endl;
-            cout << "Check your inventory to see it." << endl << endl;
+            readFile("./textFiles/ringoGame/win.txt");
             inPlayer->getPlayerItems()->addItem(getRandItem(1));
             this->setInteractBool(true);
         }
         else{
-            cout << "\"It's a little bittersweet, this victory. I mean I'm the one" << endl;
-            cout << "who invited you in here and all that, sometimes I feel like I should" << endl;
-            cout << "give you an easier time of things. But, I also believe in you. You can do it." << endl;
-            cout << "Peace and love.\" Try again!" << endl << endl;
+            readFile("./textFiles/ringoGame/failure.txt");
         }
     }
 }
@@ -67,7 +59,7 @@ void Ringo::interaction(Player *inPlayer){
 *   has won, or if all the taken spaces count up to 9 will print that 
 *   the result is a tie.
  * ************************************************************************/
-//some test are from https://stackoverflow.com/questions/16924380/c-comparing-inner-values-in-a-2d-multidimensional-array
+//some tests are from https://stackoverflow.com/questions/16924380/c-comparing-inner-values-in-a-2d-multidimensional-array
 char Ringo::checkTicTac(const char gameBoard[3][3], char testChar){
     for(size_t i = 0; i != 3; i++){
         int win_cnt = 0;

@@ -27,14 +27,11 @@ void John::interaction(Player *inPlayer){
         char answer = validateChar(false);
         if(answer == 'Y'){
             if(this->miniGame(inPlayer)){
-                cout << "All we are saying, is give John a chance." << endl;
-                cout << "If you keep beating him, he might get sad." << endl;
-                cout << "Check your inventory for a new item." << endl << endl;
+                readFile("./textFiles/johnGame/winItem.txt");
                 inPlayer->getPlayerItems()->addItem(getRandItem(0));
             }
             else{
-                cout << "John gives you a smile, \"Thanks for letting me win that one.\"" << endl;
-                cout << "Try again." << endl << endl;
+                readFile("./textFiles/johnGame/failureItem.txt");
             }
         }
         else{
@@ -44,15 +41,12 @@ void John::interaction(Player *inPlayer){
     else{
         readFile("./textFiles/johnText.txt");
         if(this->miniGame(inPlayer)){
-            cout << "\"Well, you beat me! You're getting better all the time, aren't you?\"" << endl;
-            cout << "He hands you his guitar. Check your inventory to see." << endl << endl;
+            readFile("./textFiles/johnGame/win.txt");
             inPlayer->getPlayerItems()->addItem(getRandItem(1));
             this->setInteractBool(true);
         }
         else{
-            cout << "\"I'm sorry, but if you can't even spell this word," << endl;
-            cout << "I don't know if I should trust you with my things, now.\"" << endl;
-            cout << "Try again." << endl << endl;
+            readFile("./textFiles/johnGame/failure.txt");
         }
     }
 }
