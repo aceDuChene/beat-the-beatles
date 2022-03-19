@@ -41,7 +41,7 @@ void Ringo::interaction(Player *inPlayer){
         }
     }
     else{
-        readFile("./textFiles/ringText.txt");
+        readFile("./textFiles/ringoGame/ringText.txt");
         if(this->miniGame(inPlayer)){
             readFile("./textFiles/ringoGame/win.txt");
             inPlayer->getPlayerItems()->addItem(getRandItem(1));

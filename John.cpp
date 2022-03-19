@@ -39,7 +39,7 @@ void John::interaction(Player *inPlayer){
         }
     }
     else{
-        readFile("./textFiles/johnText.txt");
+        readFile("./textFiles/johnGame/johnText.txt");
         if(this->miniGame(inPlayer)){
             readFile("./textFiles/johnGame/win.txt");
             inPlayer->getPlayerItems()->addItem(getRandItem(1));

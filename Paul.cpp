@@ -40,7 +40,7 @@ void Paul::interaction(Player *inPlayer){
         }
     }
     else{
-        readFile("./textFiles/paulText.txt");
+        readFile("./textFiles/paulGame/paulText.txt");
         // won the game the first time
         if(this->miniGame(inPlayer)){
             readFile("./textFiles/paulGame/win.txt");
