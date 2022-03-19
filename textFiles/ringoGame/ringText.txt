@@ -1,5 +1,5 @@
 .-------------------------------------------.
-|               Ringo's Room               |
+|               Ringo's Room                |
 '-------------------------------------------'
 
 "Hello again!" says Ringo cheerfully, flashing you a peace sign.

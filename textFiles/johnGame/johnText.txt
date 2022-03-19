@@ -1,5 +1,5 @@
 .-------------------------------------------.
-|               John's Room               |
+|               John's Room                 |
 '-------------------------------------------'
 
 You open the door and a cat jumps out to greet you.
