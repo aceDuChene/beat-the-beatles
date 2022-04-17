@@ -8,16 +8,16 @@ Play and find out!
 This was the final project of Oregon State University Ecampus 
 Intro to Computer Science II in Fall 2019, when it was offered
 using C++.
-Requirements according to assignment specifications:
-    * Design a game with pointer-linked spaces
-    * Use object-oriented programming oncepts
-    * Requires a "Space" class, representing the space the
+Some of the requirements according to assignment specifications:
+    1. Design a game with pointer-linked spaces
+    2. Use object-oriented programming oncepts
+    3. Requires a "Space" class, representing the space the
       character can be in. Must be an abstract class with
       virtual functions.
-    * At least 3 derived classes from "Space"
-    * Have a limit to number of turns the user can take
+    4. At least 3 derived classes from "Space"
+    5. Have a limit to number of turns the user can take
       before losing the game
-    * Player must be able to interact with parts of the
+    6. Player must be able to interact with parts of the
       space structure
 
 # Starting the Program
