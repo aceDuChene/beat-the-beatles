@@ -90,11 +90,6 @@ bool End::testEnd(Player *inPlayer){
 *   the game.
  * ************************************************************************/
 bool End::miniGame(Player *inPlayer){
-    cout << "You load up the tour bus and as you place the final item and close the doors," << endl;
-    cout << "The Beatles surround you and say, \"Thanks Friend.\""<< endl;
-    cout << "And today, you really have made four new friends that you can" << endl;
-    cout << "have fun playing rudimentry games with..." << endl << endl;
-    cout << "And in THE END, the love you take is equal to the love you make." << endl << endl;
-    cout << "                     This is a fan game. Please do not tell The Beatles." << endl;
+    readFile("./textFiles/win.txt");
     return true;
 }

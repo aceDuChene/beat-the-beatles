@@ -45,16 +45,14 @@ void George::interaction(Player *inPlayer){
     //if they have not yet gotten the guitar, George will act like he's never seen them
     //before as he tries to erase the grotty sammy from his memory
     else{
-        readFile("geoText.txt");
+        readFile("./textFiles/georgeGame/geoText.txt");
         if(this->miniGame(inPlayer)){
             cout << "George gives you his guitar. Check your inventory to see it." << endl << endl;
             inPlayer->getPlayerItems()->addItem(getRandItem(1));
             this->setInteractBool(true);
         }
         else{
-            cout << "George is too repulsed by the sandwich you made to even" << endl;
-            cout << "think about handing over the guitar so you can do your job." << endl;
-            cout << "He tries his best to forget this incident ever happened." << endl << endl;
+            readFile("./textFiles/georgeGame/failure.txt");
         }
     }
 }
@@ -122,26 +120,19 @@ bool George::miniGame(Player *inPlayer){
 
     //player picked Ham
     if(numCount < 0){
-        cout << "Don't you know George is a vegetarian?" << endl;
-        cout << "\"This is completely grotty. I won't let this inside my beautiful room.\"" << endl;
-        cout << "Try again." << endl;
+        readFile("./textFiles/georgeGame/hamFail.txt");
         return false;
     }
 
-    //player did not pick ham or egg
+    //player did not pick ham nor egg
     else if(numCount >= 0 && numCount <=11){
-        cout << "George eats your sandwich..." << endl;
-        cout << "\"Well, it could be better.\"" << endl;
-        cout << "You didn't make the most delicious sandwich." << endl;
-        cout << "Try again." << endl;
+        readFile("./textFiles/georgeGame/noEggFail.txt");
         return false;
     }
 
     //player picked egg
     else{
-        cout << "George takes an enormous bite of your sandwich..." << endl;
-        cout << "\"Groovy! How did you know my favorite is egg sandwich?\"" << endl;
-        cout << "You made George's favorite and most delicious sandwich!" << endl;
+        readFile("./textFiles/georgeGame/eggWin.txt");
         return true;
     }
 }

@@ -25,14 +25,13 @@ void Begin::interaction(Player *inPlayer){
     inPlayer->setCurrentSpace(this);
     bool playBool = true;
     if(!this->getInteractBool()){
-        readFile("title.txt");
+        readFile("./textFiles/title.txt");
         cout << "You might have to adjust your window size." << endl;
         cout << "Would you like to play \"Beat The Beatles\"? Y/N: ";
         char answer = validateChar(true);
 
         if(answer == 'Y'){
-            clrscr();
-            readFile("begin.txt");
+            readFile("./textFiles/begin.txt");
             cout << "Whose room will you start in?" << endl;
             printMenu();
             chooseMenu(inPlayer);
@@ -62,9 +61,7 @@ void Begin::interaction(Player *inPlayer){
                     playBool = false;
                 }
                 else{
-                    cout << "Sorry, but you've run out of steps. The Beatles leave you behind since they can't be late to their gig." << endl;
-                    cout << "Guess you'll have to continue your trip alone..." << endl;
-                    cout << "Try again..." << endl;
+                    readFile("./textFiles/fail.txt");
                     playBool = false;
                 }
             }
@@ -76,13 +73,7 @@ void Begin::interaction(Player *inPlayer){
  * printMenu: Prints the menu for the user to choose from.
  * **************************************************************/
 void Begin::printMenu(){
-    cout << "1. Ringo" << endl;
-    cout << "2. Paul" << endl;
-    cout << "3. George" << endl;
-    cout << "4. John" << endl;
-    cout << "5. Check Items" << endl;
-    cout << "6. Load up the Magical Mystery Tour Bus" << endl;
-    cout << "7. Quit" << endl;
+        readFile("./textFiles/menu.txt");
 }
 
 /****************************************************************
@@ -93,36 +84,30 @@ void Begin::printMenu(){
 bool Begin::chooseMenu(Player *inPlayer){
     switch(validateInteger(1,7)){
         case 1:
-            clrscr();
             this->getTop()->interaction(inPlayer);
             this->setInteractBool(true);
             inPlayer->addStep();
             return true;
         case 2:
-            clrscr();
             this->getRight()->interaction(inPlayer);
             this->setInteractBool(true);
             inPlayer->addStep();
             return true;
         case 3:
-            clrscr();
             this->getBottom()->interaction(inPlayer);
             this->setInteractBool(true);
             inPlayer->addStep();
             return true;
         case 4:
-            clrscr();
             this->getLeft()->interaction(inPlayer);
             this->setInteractBool(true);
             inPlayer->addStep();
             return true;
         case 5:
-            clrscr();
             inPlayer->getPlayerItems()->forwardPrint(false);
             this->setInteractBool(true);
             return true;
         case 6:
-            clrscr();
             //top of begin = ringo, top of ringo = end
             this->getTop()->getTop()->interaction(inPlayer);
             this->setInteractBool(true);

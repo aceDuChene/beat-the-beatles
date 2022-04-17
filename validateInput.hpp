@@ -31,7 +31,6 @@ char validateChar(bool);
 char validateAlpha();
 char validateABC();
 char validateABCD();
-void clrscr();
 void readFile(string inName);
 
 #endif
