@@ -29,7 +29,7 @@ and follow the prompts.
 # How to Play
 When the game starts up, please adjust your window size and
 type "Y" or "N" to decide whether you want to go on this trip or not.
-<img src="./readmeImages/startScreen.png">
+<img src="./readmeImages/startScreen.png" height=450>
 
 
 You will now see the set-up of the story of the game. Ringo will greet
@@ -79,7 +79,7 @@ If you went back to someone's room, you can see any additional
 items as well. You can check the item description for some
 fun easter eggs. 
 ! Please note that there is a bug with deleting items at this time.
-<img src="./readmeImages/startScreen.png">
+<img src="./readmeImages/inventoryCheck.png">
 
 # Load up the Magical Mystery Tour Bus
 When you have the four needed instruments, choose to load up the 
