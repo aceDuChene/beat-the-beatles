@@ -27,7 +27,8 @@ Some of the requirements according to assignment specifications:
       space structure
 
 # Starting the Program
-You will need to download the .zip file and unzip it.
+You will need to download the beatTheBeatles.zip file and unzip it.
+You can double-click to run the game or use the terminal.
 Enter into the newly created folder through your terminal.
 Now, you can type "./beatTheBeatles.exe" to start the game
 and follow the prompts.
