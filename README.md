@@ -49,6 +49,7 @@ to beat him as his move is random. Make your move by first entering
 the row, then enter the column of where you want to place your X.
 If you succeed the first time, you will recieve his drumset to 
 load on the bus.
+
 <img src="./readmeImages/ringoRoom.png"  height=450>
 
 # Paul's Room
