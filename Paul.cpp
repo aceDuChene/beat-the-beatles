@@ -64,11 +64,11 @@ bool Paul::miniGame(Player *inPlayer){
     char userAnswer = ' ';
     char correctAnswers[6] = {'A', 'B', 'C', 'C', 'D', 'B'};
     string questions[6] = {"Who was the original drummer of The Beatles?\nA: Pete Best\nB: Ringo Starr\nC: Keith Moon\nD: Ash Ketchum",
-        "What was the band's name when they first played in the clubs?\nA. The Silver Beat-Alls\nB. The Quarrymen\nC. Chaos Sauce\nD. The Scrummies",
+        "What was the band\'s name when they first played in the clubs?\nA. The Silver Beat-Alls\nB. The Quarrymen\nC. Chaos Sauce\nD. The Scrummies",
         "Which Beatle was the first to become a vegetarian?\nA. John\nB. Paul\nC. George\nD. Ringo",
-        "Which of these Beatles movies is an animated feature?\nA. A Hard Day’s Night\nB. Help!\nC. Yellow Submarine\nD. Let It Be",
-        "With a tune in Paul’s mind and no lyrics to put to it, what was the working title of “Yesterday”?\nA. Tofu Wings\nB. Tomorrow’s Song\nC. Bury Me\nD. Scrambled Eggs",
-        "Which Beatle was swept up in a conspiracy theory in the late 1960s, as fans dug up “clues” \nshowing that he died and was replaced by a look-alike?\nA. John\nB. Paul\nC. George\nD. Ringo"};
+        "Which of these Beatles movies is an animated feature?\nA. A Hard Day\'s Night\nB. Help!\nC. Yellow Submarine\nD. Let It Be",
+        "With a tune in Paul\'s mind and no lyrics to put to it, what was the working title of \"Yesterday\"?\nA. Tofu Wings\nB. Tomorrow\'s Song\nC. Bury Me\nD. Scrambled Eggs",
+        "Which Beatle was swept up in a conspiracy theory in the late 1960s, as fans dug up \"clues\" \nshowing that he died and was replaced by a look-alike?\nA. John\nB. Paul\nC. George\nD. Ringo"};
     int randQ = rand()%6;
 
     cout << questions[randQ] << endl;
