@@ -57,7 +57,7 @@ according to the menu.
 Ringo will face you in a game of tic-tac-toe. Hopefully it will be easy
 to beat him as his move is random. Make your move by first entering
 the row, then enter the column of where you want to place your X.
-If you succeed the first time, you will recieve his drumset to 
+If you succeed the first time, you will receive his drumset to 
 load on the bus.
 
 <img src="./readmeImages/ringoRoom.png"  height=450>
@@ -79,7 +79,7 @@ to try making another sandwich.
 <img src="./readmeImages/georgeRoom.png"  height=300>
 
 # John's Room
-John is going to face you in a hours long game of Monopoly!
+John is going to face you in an hours long game of Monopoly!
 ... Just kidding. You're going to play hangman with him.
 Input a letter at a time to guess a word related to John
 himself or The Beatles in general. You have an allowance
