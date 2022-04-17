@@ -32,12 +32,13 @@ Enter into the newly created folder through your terminal.
 Now, you can type "./beatTheBeatles.exe" to start the game
 and follow the prompts.
 
+<img src="./readmeImages/terminal.png" height=100>
+
 # How to Play
 When the game starts up, please adjust your window size and
 type "Y" or "N" to decide whether you want to go on this trip or not.
 
 <img src="./readmeImages/startScreen.png" height=450>
-
 
 You will now see the set-up of the story of the game. Ringo will greet
 you and tell you to go to each member's room to pick up 
