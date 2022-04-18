@@ -94,7 +94,7 @@ items as well. You can check the item description for some
 fun easter eggs. 
 ! Please note that there is a bug with deleting items at this time.
 
-<img src="./readmeImages/inventoryCheck.png"  height=200>
+<img src="./readmeImages/inventoryCheck.png"  height=199>
 
 # Load up the Magical Mystery Tour Bus
 When you have the four needed instruments, choose to load up the 
