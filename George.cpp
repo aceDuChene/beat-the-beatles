@@ -158,7 +158,7 @@ Item George::getRandItem(int inNum){
         num = 1;
     }
 
-    Item guitar("\"Rocky\" the Fender Stratocaster Guitar", "Orininally a boring steel blue color, George painted this with\na psychadelic pattern using neon paints.");
+    Item guitar("\"Rocky\" the Fender Stratocaster Guitar", "Originally a boring steel blue color, George painted this with\na psychadelic pattern using neon paints.");
     Item sitar("Sitar", "George became interested in this instrument after filming a scene from \"Help!\"\n");
     Item sand("Half-Eaten Egg Sandwich", "Did you take this from George? He wasn't even done eating it!");
 
